@@ -1,0 +1,131 @@
+
+.card-corporate .card-title a.collapsed {
+    color: #9b9b9b;
+}
+.card-corporate .card-title{
+    position: relative;
+    z-index: 1;
+    padding: 16px 0 16px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #58c56f;
+    transition: 1.3s all ease;
+}
+.card-corporate .card-title a, .card-corporate .card-body {
+    background: #fff;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+.card-corporate {
+    text-align: left;
+}
+.card-custom {
+    display: block;
+    margin: 0;
+    background: inherit;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: left;
+}
+.card-custom a {
+    display: block;
+}
+article {
+    display: block;
+}
+
+.card-custom .card-header {
+    padding: 0;
+    border-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+a, a:active, a:focus {
+    color: #58c56f;
+    text-decoration: none;
+}
+a {
+    transition: .3s ease;
+}
+a {
+    color: #58c56f;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+.card-corporate .card-arrow {
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    right: -1px;
+    z-index: 2;
+    width: 70px;
+    background: transparent;
+    border-radius: 0 6px 0 0;
+    transition: .33s all ease;
+}
+
+div {
+    display: block;
+}
+.card-corporate .card-arrow::before {
+    width: 14px;
+    height: 2px;
+    right: 28px;
+}
+.card-corporate .card-arrow::before, .card-corporate .card-arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    transform: translateY(-50%);
+    background: #9b9b9b;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.card-corporate .card-title a.collapsed .card-arrow:after {
+    opacity: 1;
+    visibility: visible;
+}
+.card-corporate .card-title a .card-arrow:after {
+    opacity: 0;
+    visibility: hidden;
+}
+.card-corporate .card-arrow::after {
+    width: 2px;
+    height: 14px;
+    right: 34px;
+}
+.card-corporate .card-arrow::before, .card-corporate .card-arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    z-index: 4;
+    transform: translateY(-50%);
+    background: #9b9b9b;
+}
